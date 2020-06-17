@@ -1,0 +1,1 @@
+// Chapter 5: React component lifecycle events

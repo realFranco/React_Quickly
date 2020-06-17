@@ -1,41 +1,27 @@
 <html>
     <head>
         <title> Next Challenge - React </title>
-        <script src="/home/diuble-lig/Documents/Dev/react/src/react.js"></script>
-        <script src="/home/diuble-lig/Documents/Dev/react/src/react-dom.js"></script>
+        <script src="/home/diuble-lig/Documents/Dev/React_Quickly/src/react.js"></script>
+        <script src="/home/diuble-lig/Documents/Dev/React_Quickly/src/react-dom.js"></script>
         <!-- <script src="https://unpkg.com/@babel/standalone@7.10.2/babel.min.js"></script>  -->
         <!-- <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script> -->
-        <script src="/home/diuble-lig/Documents/Dev/react/src/babel.min.js" charset="utf-8"></script>
+        <script src="/home/diuble-lig/Documents/Dev/React_Quickly/src/babel.min.js" charset="utf-8"></script>
     </head>
     <body>
         <div id="content"></div>
     
         <script  type="text/babel"> 
-            let inputValue = 'Texax'
-            
-            class Autocomplete extends  React.Component{
-                updateValues() {
-                    this.props.inputValue = 'California'
-                    inputValue = 'California'
-                    this.inputValue = 'California'
-                }
-
-                render() {
-                    return (
-                        <div>
-                            {this.props.inputValue}
-                            {inputValue}
-                            {this.inputValue}
-                        </div>
-                    )
-                }
-            }
+            var Link = props => <a href={props.href} target="_blank" 
+                className="btn btn-primary"> 
+                {props.text} 
+            </a>
 
             ReactDOM.render(
-                <Autocomplete/>,
+                <Link text='Buy React Quickly'
+                    href='google.com' />,
                 document.getElementById('content')
             )
         </script>
-        <!-- <script src="/home/diuble-lig/Documents/Dev/react/ch03/babel-jsx-test/js/script.js"></script> -->
+        <!-- <script src="/home/diuble-lig/Documents/Dev/React_Quickly/ch03/babel-jsx-test/js/script.js"></script> -->
     </body>
 </html>

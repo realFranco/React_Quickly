@@ -4,9 +4,10 @@
   "description": "react,clock-component,babel,jsx",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Error: no test specified  for ch04 folder\" && exit 1",
     "build-clock": "./node_modules/.bin/babel clock/jsx -d clock/js",
-    "build-clock-watch": "./node_modules/.bin/babel clock/jsx -d clock/js -w"
+    "build-clock-watch": "./node_modules/.bin/babel clock/jsx -d clock/js -w",
+    "build-clock-analog": "./node_modules/.bin/babel clock-analog-digital/jsx -d clock-analog-digital/js"
   },
   "author": "Franco Gil",
   "license": "ISC",

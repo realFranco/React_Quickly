@@ -3,7 +3,9 @@
 class Clock extends React.Component{
     constructor(props) {
         super(props) // if not writed, is assumed under the hood
-        this.state = { currentTime : new Date().toLocaleString() }
+        this.state = { 
+            currentTime : new Date().toLocaleString() 
+        }
         this.launchClock()
     }
 
@@ -11,29 +13,19 @@ class Clock extends React.Component{
     launchClock() {
         setInterval( () => {
             console.log('Updating time...')
-            this.setState({
+            this.setState({ // updates only the properties you pass to it
                 currentTime : new Date().toLocaleString()
             })
         }, 1000)
     }
 
-    /*
-    The mnanual approach use bind(this)
-
-    setInterval( function() {
-        this.setState({
-            currentTime: new Date().toLocaleStrings()
-        })
-    }.bind(this), 1000)
-     */
-
+    // render two chiled elements
+    // how can i impport this (?)
     render(){
         console.log('Rendering clock...')
-        return <div> {this.state.currentTime} </div>
+        return <div> 
+            <AnalogDisplay time={this.state.currentTime}/>
+            <DigitalDisplay time={this.state.currentTime}/>
+        </div>
     }
 }
-
-ReactDOM.render(
-    <Clock/>,
-    document.getElementById('content')
-)
