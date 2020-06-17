@@ -1,0 +1,28 @@
+{
+  "name": "babel-jsx-test",
+  "version": "1.0.0",
+  "description": "Testing the Bable CLI to transpile JSX -> JS",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/babel js/script.jsx -o js/script.js",
+    "build_watch": "./node_modules/.bin/babel js/script.jsx -o js/script.js --watch",
+    
+    "build-clock": "./node_modules/.bin/babel ../../ch04/clock/jsx -d ../../ch04/clock/js -w"
+  },
+  "keywords": [
+    "react",
+    "jsx",
+    "js",
+    "babel"
+  ],
+  "author": "Franco Gil",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-preset-react": "^6.5.0"
+  },
+  "babel": {
+    "presets": ["react"]
+  }
+}

@@ -1,0 +1,9 @@
+# ignore this files
+
+dev.start
+package-lock.json
+
+
+# ignore this folders
+
+node_modules/
