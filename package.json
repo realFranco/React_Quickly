@@ -1,0 +1,23 @@
+{
+  "name": "clock",
+  "version": "1.0.0",
+  "description": "react,babel,jsx",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified  for global folder && exit 1",
+    "build-05-did-mount": "./node_modules/.bin/babel ch05/did-mount/jsx -d ch05/did-mount/js",
+    "build-05-logger": "./node_modules/.bin/babel ch05/logger/jsx -d ch05/logger/js"
+
+  },
+  "author": "Franco Gil",
+  "license": "ISC",
+  "babel": {
+    "presets": [
+      "react"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.9.0",
+    "babel-preset-react": "^6.5.0"
+  }
+}

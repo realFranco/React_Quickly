@@ -11,16 +11,35 @@
         <div id="content"></div>
     
         <script  type="text/babel"> 
-            var Link = props => <a href={props.href} target="_blank" 
-                className="btn btn-primary"> 
-                {props.text} 
-            </a>
+            class Content extends React.Component{
+
+                componentWillMount(){
+                    // Expects the DOM Node to be null
+                    console.log( ReactDOM.findDOMNode(this) )
+                }
+
+                componentDidMount(){
+                    // Expects the DOM node to be <div>
+                    console.dir( ReactDOM.findDOMNode(this) )
+                }
+
+                render() {
+                    return (
+                        <div>
+                            
+                        </div>
+                    )
+                }
+
+            }
 
             ReactDOM.render(
-                <Link text='Buy React Quickly'
-                    href='google.com' />,
+                <Content/>,
                 document.getElementById('content')
             )
+
+
+
         </script>
         <!-- <script src="/home/diuble-lig/Documents/Dev/React_Quickly/ch03/babel-jsx-test/js/script.js"></script> -->
     </body>
