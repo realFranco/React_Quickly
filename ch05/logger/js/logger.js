@@ -43,7 +43,7 @@ class Logger extends React.Component {
     }
 
     render() {
-        console.log('rendering... Display');
+        // console.log('rendering... Display')
         return React.createElement(
             'div',
             null,

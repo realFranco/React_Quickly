@@ -1,5 +1,5 @@
 ReactDOM.render(React.createElement(
     'div',
     null,
-    React.createElement(Logger, null)
+    React.createElement(Content, null)
 ), document.getElementById('content'));

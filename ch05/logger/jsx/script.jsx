@@ -1,6 +1,6 @@
 ReactDOM.render(
     <div>
-        <Logger/>
+        <Content />
     </div>,
     document.getElementById('content')
 )

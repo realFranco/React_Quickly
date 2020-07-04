@@ -5,8 +5,12 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified  for global folder && exit 1",
+
     "build-05-did-mount": "./node_modules/.bin/babel ch05/did-mount/jsx -d ch05/did-mount/js",
-    "build-05-logger": "./node_modules/.bin/babel ch05/logger/jsx -d ch05/logger/js"
+    "build-05-logger": "./node_modules/.bin/babel ch05/logger/jsx -d ch05/logger/js",
+    "build-05-users": "./node_modules/.bin/babel ch05/users/jsx -d ch05/users/js",
+    "build-05-notes": "./node_modules/.bin/babel ch05/note/jsx -d ch05/note/js"
+
 
   },
   "author": "Franco Gil",
