@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title> React - CH06 - Slider Integration </title>
+
+    <script src="../../src/react.js"></script>
+    <script src="../../src/react-dom.js"></script>
+
+    <link rel="stylesheet" href="../../src/css/bootstrap.css">
+    <link rel="stylesheet" href="../../src/css/jquery-ui.css">
+    <link rel="stylesheet" href="../../src/css/style.css">
+    
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/jquery-ui.js"></script>
+
+    <script>
+      $(function() {
+        let handleChange = (e, ui)=>{
+          var slideEvent = new CustomEvent('slide', {
+            detail: {ui: ui, jQueryEvent: e}
+          })
+          window.dispatchEvent(slideEvent)
+        }
+        $('#slider').slider({
+          'change': handleChange,
+          'slide': handleChange
+        })
+      })
+    </script>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <h1>Slider Integration</h1>
+      <div id="slider"></div>
+
+      <div id="content"></div>
+      <script src="js/slider-buttons.js"></script>
+      <script src="js/slider-value.js"></script>
+      <script src="js/script.js"></script>
+    </div>
+  </body>
+
+</html>

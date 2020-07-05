@@ -9,7 +9,14 @@
     "build-05-did-mount": "./node_modules/.bin/babel ch05/did-mount/jsx -d ch05/did-mount/js",
     "build-05-logger": "./node_modules/.bin/babel ch05/logger/jsx -d ch05/logger/js",
     "build-05-users": "./node_modules/.bin/babel ch05/users/jsx -d ch05/users/js",
-    "build-05-notes": "./node_modules/.bin/babel ch05/note/jsx -d ch05/note/js"
+    "build-05-notes": "./node_modules/.bin/babel ch05/note/jsx -d ch05/note/js",
+
+    "build-06-button": "./node_modules/.bin/babel ch06/button/jsx -d ch06/button/js",
+    "build-06-mouse-capture": "./node_modules/.bin/babel ch06/mouse-capture/jsx -d ch06/mouse-capture/js",
+    "build-06-onclick": "./node_modules/.bin/babel ch06/onclick/jsx -d ch06/onclick/js",
+    "build-06-onclick-props": "./node_modules/.bin/babel ch06/onclick-props/jsx -d ch06/onclick-props/js",
+    "build-06-radio": "./node_modules/.bin/babel ch06/radio/jsx -d ch06/radio/js",
+    "build-06-slider": "./node_modules/.bin/babel ch06/slider/jsx -d ch06/slider/js"
 
 
   },
